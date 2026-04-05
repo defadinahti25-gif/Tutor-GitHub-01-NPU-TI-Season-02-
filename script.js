@@ -1,47 +1,50 @@
-const container = document.getElementById('ascii-container');
+const canvas = document.getElementById('ascii-canvas');
 
-// Memuat teks dari file ascii_art.js
-container.textContent = myAsciiArt;
+// Konfigurasi
+const radius = 50; // Jarak jangkauan mouse untuk menghilangkan teks
 
-// Setting posisi awal (di tengah layar)
-let currentX = window.innerWidth / 2;
-let currentY = window.innerHeight / 2;
-container.style.left = currentX + 'px';
-container.style.top = currentY + 'px';
+// 1. Pecah string mentah menjadi grid <span>
+function initAscii() {
+    const lines = rawAscii.split('\n');
+    canvas.innerHTML = ''; // Bersihkan
 
-// Konfigurasi sensitivitas
-const avoidanceRadius = 150; // Seberapa dekat mouse sebelum ASCII kabur
-const escapeSpeed = 25;      // Kecepatan loncatan saat menghindar
+    lines.forEach(line => {
+        const lineDiv = document.createElement('div');
+        // Pecah baris menjadi karakter
+        line.split('').forEach(char => {
+            const span = document.createElement('span');
+            span.textContent = char === ' ' ? '\u00A0' : char; // Gunakan spasi khusus HTML
+            span.className = 'char';
+            lineDiv.appendChild(span);
+        });
+        canvas.appendChild(lineDiv);
+    });
+}
 
-document.addEventListener('mousemove', (event) => {
-    const mouseX = event.clientX;
-    const mouseY = event.clientY;
+// 2. Logika Deteksi Mouse
+document.addEventListener('mousemove', (e) => {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    
+    const chars = document.querySelectorAll('.char');
 
-    // Mendapatkan posisi tengah dari elemen ASCII
-    const rect = container.getBoundingClientRect();
-    const asciiCenterX = rect.left + rect.width / 2;
-    const asciiCenterY = rect.top + rect.height / 2;
+    chars.forEach(span => {
+        // Mendapatkan posisi koordinat tiap karakter di layar
+        const rect = span.getBoundingClientRect();
+        const charX = rect.left + rect.width / 2;
+        const charY = rect.top + rect.height / 2;
 
-    // Menghitung jarak antara mouse dan elemen (menggunakan Teorema Pythagoras)
-    const dx = asciiCenterX - mouseX;
-    const dy = asciiCenterY - mouseY;
-    const distance = Math.sqrt(dx * dx + dy * dy);
+        // Hitung jarak menggunakan Pythagoras
+        const dist = Math.sqrt(Math.pow(mouseX - charX, 2) + Math.pow(mouseY - charY, 2));
 
-    // Jika mouse masuk ke dalam radius sensitivitas
-    if (distance < avoidanceRadius) {
-        // Hitung sudut dorongan menjauh dari mouse
-        const angle = Math.atan2(dy, dx);
-        
-        // Pindahkan posisi saat ini ke arah sebaliknya
-        currentX += Math.cos(angle) * escapeSpeed;
-        currentY += Math.sin(angle) * escapeSpeed;
-
-        // Menjaga agar ASCII tidak terlempar keluar dari layar browser
-        currentX = Math.max(0, Math.min(window.innerWidth - rect.width, currentX));
-        currentY = Math.max(0, Math.min(window.innerHeight - rect.height, currentY));
-
-        // Terapkan posisi baru ke CSS
-        container.style.left = currentX + 'px';
-        container.style.top = currentY + 'px';
-    }
+        if (dist < radius) {
+            span.classList.add('hidden');
+        } else {
+            // Opsional: hapus baris ini jika ingin efek hapus permanen
+            span.classList.remove('hidden'); 
+        }
+    });
 });
+
+// Jalankan inisialisasi
+initAscii();

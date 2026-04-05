@@ -1,0 +1,47 @@
+const rawAscii = `VVVVVVVVVVVVVRRRRRRXXXXRRRRRRRVVVVYYYYIIIII|||||||||iiiiiiiiiiiiiiiiiittiiitttttttttttttttt*******************************************************************++++++++++++++++++++++++++++++============
+YYVVVVYYYYYYYVVVVRRRRRRXXXXXXXXRRRRRRRRVVVYYYYIIIII||||||iiiiiiiiiiiiiiiiiiitttttttttttttttt******************************************************************++++++++++++++++++++++++++++++++==========
+|IYYYVVVYYYYVVVVVVVVVVRRRRRXXXXXXXXXXXXXXXRRRRVVVYYYYIII||||||iiiiiiiiiiiiiiittttttttttttttttttt**********************tttttt*t********************************+++++++++++++++++++++++++++++++++=========
+YYYYYVVVVVVVVVVVVVVVVVVYYYYYYYYIIII|||||iiiiiiiiiiitttttttttttttttttttttt*tttttttttttttttt**************************************************++++++++++++++++++++++==========--------;;;;;;;;;;;;;;;;;;;;
+VVVVVVVVRRVYYYYYYRRRV|IIYYVYRVVYYYYYIIII|||iiiiiiiiiiiitttiiiittttttttttttttttttttttttttttt**************************************************+++++++++++++++++++++============----------------;;;;;;;;;;
+RVVVVVRR|ttt||ittiiiIVRRVYVVRRXX###XXRRRVYII||||iiiiiiiiiiiii|iittttttttttttttttttttittttttt*************************************************+++++++++++++++++++++++============-----------;;;;;;;;;;;;;
+XXRXXXVti|iti|iitt**t+tiVXXVIIIIYYVVXX####%#XRRRVYII||||||iii|||iiiiiiiiitttttttiiitttttttttt*************************************************+++++++++++++++++++++===========--------------;;;;;;-;;;;;
+YYYYYYVIIitti+*iittt*++*=tIR#XV|i|||IIYVRRRXX######%%XRRRYII||III|ii||iiiiiiiiiiiittttttttttt*********************tttt************************+++++++++++++++++++++++++=======------------------------;;
+itiiiiV|it*=-:*==*t*+=*+++=+tVXXXYVYVVYYIIYVRRRRXRXXX######%XRVVYI||Iiii||iii||iiiitttttttttttttttttt*********ttttttttt************************+++++++++++++++++++++++++========-------------------;;;;;
+**++*t|Y|itt*+t=;:--+=**=-;--*|*YVRXXXXRVIIYYVVRRRXXXXXX##XX##%%##XRVIII||II|iii|iiiitttttttttttttttt*********ttttttttt*tt****t********************++++++++++++++++++++++=========--------------------;;
+++*++t*iII||t*+-''';-+=*+-;-=ti+IiIRRXXRRYi|IYYVVVRRRRRXXXXXXRRX###XX##XRYIIII|iiiiitttttttttttttttttttt***t*ttttttttttttttt*****ttttt************++++++++++++++++++++++==========------------------;;;;
+*tttttit*i||+-|=;::':=tti+-=t|||t|YRRRRRVYitti|IIIYYYYVYIY|*+*+tIR|*IX#XR#%#Y||iiiiittttttttttttttttttttt*ttt***tttttttttttttttttttttttt*************++++++++++++++++++++============-----------------;;
+iittii||i|it*tt|++=;':;-===;-=tttIVVVRRRYiitiitiii|I|iit|VVVVIi**i|IVVRX#XR#XI|||iiitittitttttttitttttttttttt***ttttttttttttttttttttitttt******tiiii|I||||it*++====++++++=+===========----------------;;
+|i||||tti|tit*|Y|t*=:; .:=*i|YYYYRRRVVVY|ti||||I|||YYIYYYIYY+:-+=.*RRRVVXXXXRVI|iiiiiiiiittttttttttttttttttttttttttttttttttttttttt|VVRRYit**YYIIiit****tit*tt*****++-;-+++============-----------------;
+titiY|iiittitt+-+iItt+=I|Iiti|YYVVVVYIIiti|IIIIIIIIIII|iit+::+i+#;:YiIR#X|VX##RVY|iiiiiiiiiiiiiitttttttttttttttttttttttttttttttttiIiVIRXYit=;;-=====---==+*ttii*+==---;;-++============----------------;
+i||i||ii*i*iiit*++ttIii|IIYI|i|||II||iii|IIYYYYYYIYII|||IYRVYI|it''':=I|iVIRXRXRRRVIiiiiiiiiiiiiiiiiiiiiiitttiiiiiiiiitiiittttttiiIiIIRXRIt+;:::;;;;-----=***ttit+=====;;;=+===========---------------;;
+i|ti||ti|*iittitt+*tIY|iiii||||iiii||IIIIIIYYYYYIIIIIYYYVVRRY|IYRXXY||I|*+;=*t|VVVVVRVI|iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii|YIV#XV|+-;:;:::;;-==+***t+*tit*=+*+*-=+*+==========--------------;;;
+it|ii|tt*tii|t|*t++|VYI||i**i|tiIVVVVYYIYIIIIII|||||IIVYYYYIY||i+=-=-;;-:-+ttiii|VRRVYYRRY|||||iii||||iiiiiiiiiiiiiiii|iiii||IIIIYIItIIRXRYt=--;;;::;-++t++-=-=t|it*+iti*=***+=======------------------;
+it*i|i|iitY*titt**|IYYI||it**tiIYVVVYYIII|||||||i|i|||II||iiitt+=;;:-:=iIYYYVVYVYYVVYi*||RXRYI||||I||||||||||||||||||||||YIYIIit*|*ii|VVXXV|t+===--:;;;;-:-;-*|t|YIVI**it++*t+=====---------------------
+itiii|||tii|ti*tti||VYII|||ti|IIYVYYII|||i|i|iiii|ittttt**+==;-+tt*+*i|VR|ttii*|tY|IIXI+tXXXXXRYIIIIII||||||||||||||IYV|i+=-tIi-ti+tiYYRXXVi*+++=-=-;;--;--tVYt*+-tiYYY*==+ii*+===----------------------
+iititit|||Ii|*|iI|IIYYYII|i||IIIYVVYI|iiiiiitiiittt**++++=+*|YVYi+=+tYR|i*YYVI|Y|Yi|VX#+:|V#RXRRXRYII|I|||||||||IYRRXRRRVVYY||i=*+=*+||YRY|t+++++===-====-=IYV**+t-**i|V==+iit*===----------------------
+tttit|i|tI||||ti||IYYYIIII|||IYYYYYII||tttttt*******++++*iIYYIt+-=tIX|t*tYI|RX#RR|XVRR#%Y=;**+t|R@@VIIIIIIIIIIIIX#####XXRYYYI|it+-;-=+t|I|t+=+==---=====+|||*Yi==R-:=*+||;+tii*+====--------------------
+itiii|i|iiI||Iti|IYIYIIIII||IVYYYYYIII|ii*++**++*++*+****i||i|*+|YYR+*I|++iYR|VIR#%#XRYR%%I:''':*|%XYVVVYYYYYYYX##X##XRRRRRVVVVi*+=-++t|i*+====---;;-==|Vt+*==*=||It-==-|=+ii|i+===---------------------
+ti|ii|i||iI|i||i|YYYYYYIIIIIYYYYYYYIIIII|ii*++++++****tiYRYiYVRRVVVt|VYi==tttiIR##VXYX#%#%%R;'';tIYRVVVVVVVVVRX#XXXXXXRRRRRXRRYIi*==+=*t*+----=--==-==|IVit+**ii=;-YItt*+tttt||+==----------------------
+|ii|i|ii||i||I||||IYYIII|IIYYYYYYYYYYYYYI||iittt*ttttii|||YVRXRVVY|IVV|+=i*iiiIVIXR#%XRXRXVXI'+XXRRRRRRRRRRRRR#XXRVYVXXRRRXYYYVII*=*++++====+++===---=*+*t***ti*+*IIt+=+ttt*tii+==-----------;;;;-------
+t+iiiii||i||||||||IIIYIIIIIYYYYYYYYYYYYII|||I||iiiiiiiti|IYRRVVRXRI|i+-;:;:::;-*iit*i+tY|IYVR+%#XXXXXRXXXXXXXX##%##XXRXRRXRXRRVI|+tii+++=*+-+++====;:;:'.:-=*tiit*=--==*ii**iit*=--------;;;;;;;;;;;----
+i+ti|i||||ii|it||IiIIII|IIIYYYYYYIYIYI|||iiiIYiiiiiiii|IIIVVRRRRY+;:.:'.''''''=RXXX;|iRVI|Yi*V@XXXXXXXXX##XXXX%%%#%##XXXRRRVVVY||t*+*t******++++*----;:''''''''''';-+=++*t*t*itt+===-----;;;;;;;;;;-----
+|t=ti|||i|i|ti|iiI|||||I|IIIIYYYYIYYYI|iiiittt*|IIIYIYYYYYRRRRY*':........''''=%X#t*RRIi||i|V########XXX######%##XXXXRVVYIY|I||t**++++*t***t+*+===--;:':::::'':''':--==+++*tttiti*+==----;;;;;--;;;;;-;-
+it*+ttiiitiitiiiiii|i|||||IYYIIIIIYYII||it**+*iIIYVVVVVVRRRRVi:.......:*|iYRX####%###############################XRRRVYIIitt++==-=t*=---====+=+=-=;;:::::::':;:'::'::;-=+=+**tit|ti*+==----;;;;;;;-;----
+iii+ttttti|i||ttiii|i|i||||IYYIIYIIIII||iiti|YVVVYVVVVRRXXXY+.......=R%#%%%%%%##%%%%%%#%%%%%%%%%%##################%#VVVYYYIYII|i+=-+tiIi+--=----;;--;;:::::'':-=+tt*;:;-;-=++ttttii*t+==--;;;;;;;;;;;;-
+*tt*ttt*tttiti||iiiti||||||I|II|IIIIIIII|IYYVYVVVVVVRVVRRXY+.Iii+...-R%####%####%%%%%%%%%%%%%%%%%%%%%%%%%%#########%#VVIIYIIYi|tYIIVI|t*+-*t+-==-====---=--;:::+ttiYYYI*;:-:--=++titiitit+=--;;;;;;;;;;;
+it++tt*tt*ttiiiiitiiii|||||I|||III|IYIYYVRRRVRRVVVYYIYXV+..'|++Yi''t###############%%%%%%%%%%%%%%%%%%%%%%%###%##%%XVI|I|tii*+;;+*+*t|VIi*=+iR*=+*t++++t**=;;;tiii|VYIIY|*-;;---=+***iittt+=--;;;;;;;;;;;
+***+=*tii*tt|i|iiti|ii||||IIIYIYYYVYYYVVVRRVVVRRRRVYiYR-   :*;-IY*.|%###############%%%%%%%%%%%%%%%%%%%%%%#####%%XVIi|i**+ttiXRIi=i=;|VIt==R#X|*+++++**i++=-*iitiYYIiii|I|t+::;-++**tttiit+=---;;;;;;;;-
+t++++ttti*iitiiiii||||IYIYRVVVVVVVVVYYVYVVVVRRVVRRRVIVV:   '+t*I=Y-I#XXXX###########%%%%%%%%%%%%%%%%%%%%%###%%%#RVIII|ii|YRY||i+=:'''*VY|+|%%#V|+*++*ti*t**i|itiIVY||t+**iit+-::;-=**+*tt***=---;;;;;;;-
+**+***tttttttti|||YRR##XXXRVVVXRR##XXXXXRRRVVVVVRRVYIVV+   ..*t'.=|V#XXXX##########%#%%#%%%%%%%%%%%%%#######%%XRY||||iYVYI|i=VXX+'=*:=IYt+Y####Xt+=+tt|tiii|t*YVYYI|tt+=+++***+-;;;-+++*+*+=*=-;;;;;;;;-
+++*+**ttttti|IYVX##XRYI||iiiii|iiIIIIIYYVVRX#XXRVRVYiYR|;   ...=-+*|YXRX###################%%%%%%%%%########%%XV|||ti|I|it**=i##X=:;-+|i*=|#####XY+=**ittt***|RVI|it*+*+++++++++=+=--=++**+***+=-;;;;;;--
+++*ttttii||IVRXXRYY||iiiiiiiiii|||||||IYYYYYYVVX#RVV|VXVi;.    ;YVYt|RXXXXXXXXX###############%%%%%#######%#XRiii|=t|ii|I*tI##V*:-+**t;*R######XR+*t*+=-:-iIRRY|tt*++====+=+=-===++++++t+*+*+*+-;;;;;;--
+*+*tii|IYVRXRVVYII||iiiiiiiiiii|iiiii||IYYYYYVVVV##VYRXXVV*.    .+iiYYXXXXXXXXXXXXXXXX#XX#################%#XXYt*+*=*titittR###-++==+*iV#########Xtt=;::;-ttYVY|t*+=====--;--=---=---===+*++++=+=;;;;;;;-
+tti|IYRRXRRVVVYYII|iiiiiiiii|YYIiii||||IYYYVVVVVVR##VRXRRRV|+:...'=-+XRRXXXXXXXXXXXXXXXXXXXXXX#XX########XVXXV|+-;-;-++=-X####VIIVVR############Y+;::-+===i||i**+=---;;::::;:;;:;;;--;--====+=+=-;;;;;;;
+|IVRRRRVVRRVVVYYYII|I||||||||III|IIIIIIIYVVVVVVVVVX%%RRRRRXVIY|i*+tYXRRXXXXXXXXXXXXXXXXXXXXXXXXXXX#XX####VIVRVIt=;::::;;t####################%#Y+;':=t*=;=i||t++=-;;;::'':''':::':;::::-;-;;--=+=;;;;;;-
+VRRRRRVRRRRRVVVYYYYIIIIIIIIIIIIIIIYIIYIYYVVVVRRVVX%@@#RRRXRRRVVRX##XRRRRRXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXIt|VVY|*-:''':;R###%%#####%########%%Y+:';=i|+-:*itt*+--;::'''..'........''''''::;:::;-==;;;;;;-
+XRVVVVVRVRRRRVVVVYYYYYYYYYYYYYYYYYYYYYVVVVRRRRRRRX#%%@%XXXX##%%##RXRRRRXXXXXXRRXXRRXXXXXXXRRRRRXXXXXXXXXXV+*IIYIt=-;:'':+X##%##%%%%%%%######%V+:':=tIt=:;=+**+=;:''.....  .......... ...''::'':';=-;;;;-
+XRRRRRRRXXXXRVVVVVVVVVVVVVVVVVVVVVVRVVVVVVRXRRRRRRXX###%%##XRRRVRRRRRRRRXXXXXXRRRRXXRRXXXXRXRRXXRRXXXXXXXX+=*|i|t*-;;::::=X###%%#%%%%%%%%%%#Xt;::-*||*-:;;-----;'''             ....  .   ...'''''';-;;;;-
+XXXXXXXXXXXXRVVRVVVVVVVVVVVVVRVVVVVVVVVVVVVRXXXXXRRRRRRVVVVVVVVRRRRRRRRXRXXXRRRRRRRRXRRRRRRRRRRRRRRRRXXXXRt=++*t*++-;:::::=X#######%%%%%%%%#V=:':=*Ii+;':::':::'..               . ....        .......'-;;;;-
+||||II||||||||IIIIYYYYVVVVVVVRRRXXXXXRRRRRVVYII|iiiii|IIYVRRRRXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX#####XXXXXRRRVYI|it*+====++tiIYVRXXXXXXXXXXXXXX###########XXRVY|t*++===+++*ttiiitt**+==---;;;;::::::::
+|IIIIIIIIIIIIIIIYYYYYVVVVVVRRRRXXX#XXXXRRRRRVVYYYYIYYYVVVRRRRRXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXRRVVVYYI|it*+=---=+tiIYRXX#######################XXRVY|i*+++++++++**ttttt*++==--;;::::::''''':
+IIIIIIIIIIIIIIYYYYYYVVVVVVVRRRXX#####XXXRRRRRRRRRRRRRRRRRRRRRRRXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXRRVVYYYII||i*+=----+*iIVRXX#######################XRVY|i*+++****++++******++=--;;:::'''''''''''`;
