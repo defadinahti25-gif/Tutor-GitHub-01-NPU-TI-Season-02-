@@ -12,18 +12,18 @@ body {
 }
 
 #ascii-canvas {
-    line-height: 12px; /* Sesuaikan agar jarak antar baris rapat */
+    line-height: 10px; /* Sesuaikan agar jarak antar baris rapat */
     letter-spacing: 2px;
     white-space: pre;
     cursor: crosshair;
     user-select: none;
-    font-size: 10px; /* Ukuran font kecil karena ASCII sangat detail */
+    font-size: 5px; /* Ukuran font kecil karena ASCII sangat detail */
 }
 
 /* Class yang akan diberikan pada setiap karakter */
 .char {
     display: inline-block;
-    transition: opacity 0.3s ease; /* Efek memudar */
+    transition: opacity 0.01s ease; /* Efek memudar */
 }
 
 .hidden {
