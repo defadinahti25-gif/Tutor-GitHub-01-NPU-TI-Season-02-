@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Mencegah munculnya scrollbar saat ASCII mendekati tepi */
+    background-color: #1e1e1e; /* Warna background gelap */
+    color: #00ff00; /* Warna teks hijau ala hacker */
+    font-family: monospace; /* Font wajib untuk ASCII art agar presisi */
+    height: 100vh;
+    position: relative;
+}
+
+#ascii-container {
+    position: absolute;
+    white-space: pre; /* Mempertahankan spasi dan enter persis seperti aslinya */
+    cursor: default;
+    user-select: none; /* Mencegah teks terblok oleh mouse */
+    transition: left 0.1s ease-out, top 0.1s ease-out; /* Efek pergerakan lebih mulus */
+}
